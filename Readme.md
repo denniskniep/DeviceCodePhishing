@@ -111,5 +111,12 @@ docker build . -t device-code-phishing
 docker run -p 8080:8080 device-code-phishing
 ```
 
+## Detection
+The following three fields and their values identify DeviceCodePhishing events:
+
+* originalTransferMethod: `deviceCodeFlow`
+* resourceDisplayName: `Microsoft Graph`
+* appDisplayName: `Microsoft Authentication Broker`
+
 ## Disclaimer
 Provided as educational content only!
